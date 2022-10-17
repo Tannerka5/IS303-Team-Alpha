@@ -1,7 +1,6 @@
 # GROUP Hamburger Door Dash assingment
 # Group 1
 
-
 # THIS IS A GROUP ASSIGNMENT (USE GIT/GitHUB)
 # Your task is to create a program that will help you familiarize yourself with various data structures available in the Python language.
 import random
@@ -36,12 +35,31 @@ print(Person.customer_name)
 
 # This method randomly returns one of the 9 names when called
 # The Person constructor should call the randomName() method and assign the return value (a random name) to the customer_name instance variable
+class Customer(Person):
+    def __init__(self, orderObject):
+        super().__init__()
+        self.order = orderObject
 # Create a Customer class that inherits from the Person class
 # Create a constructor that calls the parent constructor
 # Create an instance variable called order in the constructor that is assigned an order object
 # Create a variable for a Queue that will be assigned items of type Customer
+queueOne = Customer()
+
 # This variable will represent your line of customers (objects) waiting outside to place their hamburger orders
+
 # Create a variable for a Dictionary with keys of type string and values of type int.
+dictionaryOne = {
+    "Jefe": 3,
+    "El Guapo": 7, 
+    "Lucky Day": 2,
+    "Ned Nederlander": 5,
+    "Dusty Bottoms": 9, 
+    "Harry Flugleman": 3,
+    "Carmen": 7, 
+    "Invisible Swordsman": 2,
+    "Singing Bush": 5,
+}
+
 # This variable will hold information about each customer
 # Put 100 customers into the queue. Each customer object will already have a random number of burgers for each order
 # Make sure there is a key in the dictionary for each customer before you try incrementing their total! Otherwise, add the customer to the dictionary.
