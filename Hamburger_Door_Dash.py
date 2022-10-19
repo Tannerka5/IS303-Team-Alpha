@@ -61,6 +61,7 @@ dictionaryOne = {
 }
 
 # This variable will hold information about each customer
+
 # Put 100 customers into the queue. Each customer object will already have a random number of burgers for each order
 # Make sure there is a key in the dictionary for each customer before you try incrementing their total! Otherwise, add the customer to the dictionary.
 # Print out each customer and their total burgers ordered sorted by the most number of burgers ordered
