@@ -76,14 +76,9 @@ dictionaryOne = {
 # This would return a random number between 1 and 20.
 
 # Sample Output
- 
-
 # Your sample output could look like:
 
- 
-
 # Table
-
 # Description automatically generated
 
 # You can use a statement similar to: listSortedCustomers = sorted(dictCustomers.items(), key=lambda x: x[1], reverse=True)
@@ -98,4 +93,3 @@ dictionaryOne = {
 # Make the customer name an even sized value using the ljust() function with the value of
 
 # 19 as the parameter like customer[0].ljust(19) where customer is each list item object in the for loop.# Hamburger Door Dash Group Assignment
-
