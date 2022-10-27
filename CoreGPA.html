@@ -1,3 +1,7 @@
+<!--This is what I have done so far. I have the basic forms/inputs and the calculation works,
+but I don't have any style added whatsoever-->
+
+
 <!DOCTYPE html>
 <!-- saved from url=(0105)https://learningsuite.byu.edu/plugins/Upload/fileDownload.php?fileId=771be873-ASqb-lXjC-Se9Q-MM156b16f8e5 -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -25,14 +29,81 @@
             document.getElementById("coreGPA").innerHTML = "Core GPA is " + fFinalGPA;
         }
     </script>
-<link href="chrome-extension://cjmfiochlaffhnellbhffgnjocahinnh/dogEar/dogEar.css" rel="stylesheet" type="text/css"></head>
-<body data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
-    <form>
+    <link href="chrome-extension://cjmfiochlaffhnellbhffgnjocahinnh/dogEar/dogEar.css" rel="stylesheet" type="text/css"></head>
+    <body data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
+
         <!--insert html tags --> 
+        <form>
+        <legend>What was your grade in IS201?</legend>
+                <select id="is201Grade">
+                    <option value="4.0">A</option>
+                    <option value="3.7">A-</option>
+                    <option value="3.4">B+</option>
+                    <option value="3.0">B</option>
+                    <option value="2.7">B-</option>
+                    <option value="2.4">C+</option>
+                    <option value="2.0">C</option>
+                    <option value="1.7">C-</option>
+                    <option value="1.4">D+</option>
+                    <option value="1.0">D</option>
+                    <option value="0.7">D-</option>
+                    <option value="0">F</option>
+                </select>
 
-        <button type="button" onclick="calcGPA()">Calculate GPA</button>
-
-        <!--insert html tag for displaying the calcualted GPA --> 
-    </form>
-
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+        <br><br>
+        <legend>What was your Acc200 grade?</legend>
+        <select id="acc200Grade">
+            <option value="4.0">A</option>
+            <option value="3.7">A-</option>
+            <option value="3.4">B+</option>
+            <option value="3.0">B</option>
+            <option value="2.7">B-</option>
+            <option value="2.4">C+</option>
+            <option value="2.0">C</option>
+            <option value="1.7">C-</option>
+            <option value="1.4">D+</option>
+            <option value="1.0">D</option>
+            <option value="0.7">D-</option>
+            <option value="0">F</option>
+        </select>
+    
+        <br><br>
+        <legend>What grade did you get in IS303?</legend>
+            <select id="is303Grade">
+                <option value="4.0">A</option>
+                <option value="3.7">A-</option>
+                <option value="3.4">B+</option>
+                <option value="3.0">B</option>
+                <option value="2.7">B-</option>
+                <option value="2.4">C+</option>
+                <option value="2.0">C</option>
+                <option value="1.7">C-</option>
+                <option value="1.4">D+</option>
+                <option value="1.0">D</option>
+                <option value="0.7">D-</option>
+                <option value="0">F</option>
+            </select>
+        <br><br>
+        <label for="GPA"> What is your Overall GPA?</label>
+        <input type="number" id="overallGPA"value="0.00" step="0.01" required autofocus>
+        <br><br>
+        <label for="GPA"> What is your GPA for the last 30 credits?</label>
+        <input type="number" id="last30GPA" value="0.00" step="0.01" required autofocus>
+        <br><br>
+        <legend>What was your essay score?</legend>
+            <select id="essay">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br><br>
+            <button type="button" onclick="calcGPA()">Calculate GPA</button>
+            <br><br>
+            <label id="coreGPA">Core GPA is _______</label>
+            </form>
+            <!--insert html tag for displaying the calcualted GPA --> 
+    </body>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
