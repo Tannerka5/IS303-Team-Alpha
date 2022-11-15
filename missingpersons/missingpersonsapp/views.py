@@ -9,3 +9,7 @@ def indexPageView(request):
 
 def dataPageView(request):
     return render(request, "information/data.html")
+
+
+def learnMorePageView(request):
+    return render(request, "information/learnmore.html")
