@@ -14,22 +14,43 @@
     <title>Missing Persons</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="padding:.5px">
-      <div class="collapse navbar-collapse" id="navbarNav" style="background-color: DarkSlateGray; width: 100%">
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0.5px">
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav"
+        style="background-color: DarkSlateGray; width: 100%"
+      >
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="{% url 'index' %}" style="color: GhostWhite; font-weight: bold">Home</a>
+            <a
+              class="nav-link"
+              href="{% url 'index' %}"
+              style="color: GhostWhite; font-weight: bold"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'data' %}" style="color: GhostWhite">Data</a>
+            <a
+              class="nav-link"
+              href="{% url 'data' %}"
+              style="color: GhostWhite"
+              >Data</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="{% url 'Learn More' %}" style="color: GhostWhite">Learn More</a>
+            <a
+              class="nav-link active"
+              href="{% url 'Learn More' %}"
+              style="color: GhostWhite"
+              >Learn More</a
+            >
           </li>
         </ul>
       </div>
     </nav>
-    <h1>Index Page</h1>
+    <h1>Home Page</h1>
+    <a href="../learnmore" class="btn btn-primary btn-sm mx-1"> Learn More</a>
+    <a href="../data" class="btn btn-primary btn-sm mx-1"> Data</a>
 
     <!-- JavaScript Bundle with Popper -->
     <script
