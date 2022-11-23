@@ -14,17 +14,36 @@
     <title>Data Table</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="padding:.5px">
-      <div class="collapse navbar-collapse" id="navbarNav" style="background-color: DarkSlateGray; width: 100%">
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0.5px">
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav"
+        style="background-color: DarkSlateGray; width: 100%"
+      >
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="{% url 'index' %}" style="color: GhostWhite">Home</a>
+            <a
+              class="nav-link"
+              href="{% url 'index' %}"
+              style="color: GhostWhite"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'data' %}" style="color: GhostWhite; font-weight: bold">Data</a>
+            <a
+              class="nav-link"
+              href="{% url 'data' %}"
+              style="color: GhostWhite; font-weight: bold"
+              >Data</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="{% url 'Learn More' %}" style="color: GhostWhite">Learn More</a>
+            <a
+              class="nav-link active"
+              href="{% url 'Learn More' %}"
+              style="color: GhostWhite"
+              >Learn More</a
+            >
           </li>
         </ul>
       </div>
@@ -32,14 +51,14 @@
     <table class="table table-bordered table-hover table-condensed">
       <thead>
         <tr>
-          <th title="Field #1">date_missing</th>
-          <th title="Field #2">last_name</th>
-          <th title="Field #3">first_name</th>
-          <th title="Field #4">age_at_missing</th>
-          <th title="Field #5">city</th>
-          <th title="Field #6">state</th>
-          <th title="Field #7">gender</th>
-          <th title="Field #8">race</th>
+          <th title="Field #1">Date Missing</th>
+          <th title="Field #2">Last Name</th>
+          <th title="Field #3">First Name</th>
+          <th title="Field #4">Age at Missing</th>
+          <th title="Field #5">City</th>
+          <th title="Field #6">State</th>
+          <th title="Field #7">Gender</th>
+          <th title="Field #8">Race</th>
         </tr>
       </thead>
       <tbody>
