@@ -18,3 +18,12 @@ def dataPageView(request):
 
 def learnMorePageView(request):
     return render(request, "information/learnmore.html")
+
+
+def searchPageView(request):
+
+    try:
+        first_name = request.GET['first_name']
+        people = Person.objects.filter(first_name=first_name)
+    except:
+        people = Person.object.all()
