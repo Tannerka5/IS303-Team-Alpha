@@ -18,3 +18,9 @@ def dataPageView(request):
 
 def learnMorePageView(request):
     return render(request, "information/learnmore.html")
+
+def searchPageView(request):
+    return render(request, "information/search.html")
+
+def addPersonPageView(request):
+    return render(request, "information/add_person.html")

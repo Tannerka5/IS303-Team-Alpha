@@ -11,7 +11,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <title>Data Table</title>
+    <title>Search</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0.5px">
@@ -48,37 +48,6 @@
         </ul>
       </div>
     </nav>
-    <br>
-    <a href="../search" class="btn btn-primary btn-sm mx-1"> Search</a>
-    <a href="../add_person" class="btn btn-primary btn-sm mx-1"> Add Person</a>
-    <br><br>
-    <table class="table table-bordered table-hover table-condensed">
-      <thead>
-        <tr>
-          <th title="Field #1">Date Missing</th>
-          <th title="Field #2">Last Name</th>
-          <th title="Field #3">First Name</th>
-          <th title="Field #4">Age at Missing</th>
-          <th title="Field #5">City</th>
-          <th title="Field #6">State</th>
-          <th title="Field #7">Gender</th>
-          <th title="Field #8">Race</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for person in db_persons %} 
-        <tr>
-          <td>{{ person.date_missing }}</td>
-          <td>{{ person.last_name }}</td>
-          <td>{{ person.first_name }}</td>
-          <td align="right">{{ person.age_at_missing }} </td>
-          <td>{{ person.city }}</td>
-          <td>{{ person.state }}</td>
-          <td>{{ person.gender }}</td>
-          <td>{{ person.race }}</td>
-        </tr>
-        {% endfor %} 
-      </tbody>
-    </table>
-  </body>
+    <h1> Search </h1>
+</body>
 </html>
