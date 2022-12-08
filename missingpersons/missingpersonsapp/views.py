@@ -13,7 +13,7 @@ def dataPageView(request):
     context = {
         "people": db_persons
     }
-    return render(request, "information/data.html", context)
+    return render(request, "information/data.html", {'db_persons': db_persons})
 
 
 def learnMorePageView(request):

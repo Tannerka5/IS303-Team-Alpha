@@ -83,11 +83,12 @@ WSGI_APPLICATION = 'missingpersons.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'odyssey',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'missing_persons',
         'USER': 'postgres',
         'PASSWORD': 'Tatkinson5',
-        'HOST': 'localhost'
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
