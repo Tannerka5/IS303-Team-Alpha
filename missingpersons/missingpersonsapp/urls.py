@@ -5,6 +5,6 @@ urlpatterns = [
     path("", indexPageView, name="index"),
     path("data/", dataPageView, name="data"),
     path("learnmore/", learnMorePageView, name="Learn More"),
-    path("search/", searchPageView, name="search"),
-    path("add_person/", addPersonPageView, name="Add Person")
+    path("data/search/", searchPageView, name="search"),
+    path("data/add_person/", addPersonPageView, name="Add Person")
 ]
