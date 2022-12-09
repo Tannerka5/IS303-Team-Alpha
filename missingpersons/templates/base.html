@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <title>Missingpersonsapp</title>
+  </head>
+  {% comment %} {% url 'index' as url %}
+  <header style="background-image: url('{% static "missingpersonsapp/media/lightbulb.jpg"%}');" alt= "lightbulb"> 
+    <div style="font-size: 80px; color: lightgray; font-weight: bold; height: 400px; text-align: center;" >Human Trafficking in Utah</div>
+</header>
+{% if request.path == url %}{% endif %}
+{% url 'Learn More' as url %}
+<header style="background-image: url('{% static "missingpersonsapp/media/walking1.jpg"%}'); width: 82%;"
+alt= "person walking"> 
+  <div style=
+  "font-size: 175px; color: gainsboro; 
+  font-weight: bold; height: 400px; 
+  text-align: center;">
+  Learn More
+  </div>
+</header>
+{% if request.path == url %}{% endif %} {% endcomment %}
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0.5px">
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav"
+        style="background-color: DarkSlateGray; width: 100%"
+      >
+        <ul class="navbar-nav">
+            {% url 'index' as url %}
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="{% url 'index' %}"
+              style="color: GhostWhite; {% if request.path == url %}font-weight: bold{% endif %}"
+              >Home</a
+            >
+          </li>
+          {% url 'data' as url %}
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="{% url 'data' %}"
+              style="color: GhostWhite; {% if request.path == url %}font-weight: bold{% endif %}"
+              >Data Table</a
+            >
+          </li>
+          {% url 'Learn More' as url %}
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="{% url 'Learn More' %}"
+              style="color: GhostWhite; {% if request.path == url %}font-weight: bold{% endif %}"
+              >Learn More</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
