@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,7 +15,7 @@
     <title>Learn More</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0.5px">
+    <nav class="navbar navbar-expand-lg navbar-light" id="top" style="padding: 0.5px">
       <div
         class="collapse navbar-collapse"
         id="navbarNav"
@@ -48,129 +49,164 @@
         </ul>
       </div>
     </nav>
-    <div style="margin: 10px">
-      <h1>Learn More</h1>
+      <header style="background-image: url('{% static "missingpersonsapp/media/walking1.jpg"%}');" alt= "woman walking"> 
+        <div style="font-size: 80px; color: #FFEA00 ; font-weight: bold; height: 400px; text-align: center;" >Learn More</div>
+      </header>
+      <div style="
+      width: 20%;
+      float:right;
+      border-style: solid; 
+      border-width: 4px;
+      border-color: black;
+      background-color: #0099CC;
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+      height: 100%;
+      padding: 7px;
+      font-weight: bold;
+      ">
+        <h2 id="help">Get Help</h2>
+        <p>
+          If you are in immediate danger- CALL
+          <span style="font-weight: bold"> 911</span>
+        </p>
+        <p>
+          Call the National Human Trafficking Hotline by dialing
+          <span style="font-weight: bold">1-888-373-7888 ( TTY: 711)</span>
+        </p>
+        <p>
+          Text the National Human Trafficking Hotline by texting
+          <span style="font-weight: bold">BeFree</span> to
+          <span style="font-weight: bold">233733</span>
+        </p>
+        <p>
+          Visit the National Human Trafficking Hotline website-
+          <a href="https://humantraffickinghotline.org/"
+             style=" font-weight: lighter; color: #880E4F;">https://humantraffickinghotline.org</a
+          >
+        </p>
+        <p>
+          If you are in Utah, you can also report suspected human trafficking to
+          the Utah Human Trafficking Tip line at 801-200-3443.
+        </p>
+      </div>
+          <div style="margin: 30px; font-size: 18px; margin-bottom: 40px; width: 70%;">
+          <h2 id="defined">Human Trafficking Defined</h2>
+          <p>
+            Human Trafficking- a crime of exploitation of someone for the purposes
+            of compelled labor or a commercial sex act.
+          </p>
+          <p></p>
+          <p>There are two types of Trafficking-</p>
+          <ul>
+            <li>
+              Sex Trafficking: modern-day slavery where individuals perform
+              commercial sex through the use of force, fraud, or coercion.
+            </li>
+            <li>
+              Labor Trafficking: modern-day slavery where individuals perform labor
+              or services through the use of force, fraud, or coercion.
+            </li>
+          </ul>
+          <p>
+            In the state of Utah, the law clearly defines a human trafficking victim
+            as any minor under the age of 18 used in a commercial sex act without
+            regard to use of force, fraud, or coercion, aligning to the federal
+            trafficking law. This means that any minor used in a commercial sex act
+            is a human trafficking victim.
+          </p>
+
+          <p>
+            Human Trafficking is often a hidden crime as many victims feel afraid to
+            come forward because of threats, manipulation, or lack of proper
+            documents.
+            There is not one underlying feature of Human Traffickers. Traffickers
+            can be from any age, gender, nationality, occupation, or any other
+            group. Human Traffickers often leverage victims vulnerabilities or use coercion to keep their victims trapped.
+            Victims of human trafficking can also be from any group. No one is
+            immune. Though certain groups are at greater risk. Some factors that make one at greater risk are-
+          <p>
+          <ul>
+            <li>Poverty </li>
+            <li>Homelessness
+            <li>Substance Use
+            <li>History of sexual abuse/assault
+            <li>Child abuse/neglect
+            <li>Runaway
+            <li>Juvenile Justice or Foster Care
+            <li>Mental health problems
+            <li>LGBTQ+
+            <li>Domestic violence
+            <li>Displaced persons (refugee/immigrant)
+          </ul>
+          <h2 id="stats">Human Trafficking Statistics</h2>
+          <ul>
+            <li>
+              Human Trafficking is a multi-billion dollar criminal industry that
+              denies freedom to 24.9 million people around the world.
+            </li>
+            <li>
+              In 2020, there were 10,583 reported cases to the National Human
+              Trafficking Hotline
+            </li>
+            <li>
+              Of these cases, 4,691 High Indicator victims and 12,325 Moderate
+              Indicator victims.
+            </li>
+            <li>
+              Of the 10,583 cases, about 80% of victims were female, 12% were male,
+              and the rest were gender minorities or unknown
+            </li>
+            <li>
+              Again, of these 10,583 cases, 2,488 of these were minors and the rest
+              were adults
+            </li>
+            <li>Sex Trafficking accounted for 7,648 of these cases</li>
+            <li>Labor Trafficking accounted for 1,052 of these cases</li>
+          </ul>
+          <p>
+            These statistics are from the
+            <span style="font-weight: bold">
+              National Human Trafficking Hotline
+            </span>
+            website. To learn more, visit their website
+            <a href="https://humantraffickinghotline.org/states">here</a>
+          </p>
+
+          <h2 id="do">What You Can Do</h2>
+          <ul>
+            <li>
+              Donate to organizations that help with human trafficking efforts.
+              These include the
+              <a href="https://polarisproject.org/"> Polaris Project </a> and the
+              <a href="https://aspenhouseslc.org/"> Aspen House </a> among others.
+              Find one that you want to support.
+            </li>
+            <li>
+              Volunteer time and resources to your local efforts to stop human
+              trafficking.
+            </li>
+            <li>
+              Research more and educate those around you about the signs of human
+              trafficking.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <footer style="position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: DarkSlateGray;
+      text-align: center;">
+      <a href="#top" class="btn btn-primary btn-sm mx-1"> Back To Top</a>
       <a href="#defined" class="btn btn-primary btn-sm mx-1"> Definitions</a>
       <a href="#stats" class="btn btn-primary btn-sm mx-1"> Statistics</a>
       <a href="#do" class="btn btn-primary btn-sm mx-1"> What You Can Do</a>
-      <a href="#help" class="btn btn-primary btn-sm mx-1"> Get Help</a>
-      <h2 id="defined">Human Trafficking Defined</h2>
-      <p>
-        Human Trafficking- a crime of exploitation of someone for the purposes
-        of compelled labor or a commercial sex act.
-      </p>
-      <p></p>
-      <p>There are two types of Trafficking-</p>
-      <ul>
-        <li>
-          Sex Trafficking: modern-day slavery where individuals perform
-          commercial sex through the use of force, fraud, or coercion.
-        </li>
-        <li>
-          Labor Trafficking: modern-day slavery where individuals perform labor
-          or services through the use of force, fraud, or coercion.
-        </li>
-      </ul>
-      <p>
-        In the state of Utah, the law clearly defines a human trafficking victim
-        as any minor under the age of 18 used in a commercial sex act without
-        regard to use of force, fraud, or coercion, aligning to the federal
-        trafficking law. This means that any minor used in a commercial sex act
-        is a human trafficking victim.
-      </p>
+    </footer>
 
-      <p>
-        Human Trafficking is often a hidden crime as many victims feel afraid to
-        come forward because of threats, manipulation, or lack of proper
-        documents.
-      </p>
-      <p>
-        There is not one underlying feature of Human Traffickers. Traffickers
-        can be from any age, gender, nationality, occupation, or any other
-        group.
-      </p>
-      <p>
-        Victims of human trafficking can also be from any group. No one is
-        immune.
-      </p>
-
-      <h2 id="stats">Human Trafficking Statistics</h2>
-      <ul>
-        <li>
-          Human Trafficking is a multi-billion dollar criminal industry that
-          denies freedom to 24.9 million people around the world.
-        </li>
-        <li>
-          In 2020, there were 10,583 reported cases to the National Human
-          Trafficking Hotline
-        </li>
-        <li>
-          Of these cases, 4,691 High Indicator victims and 12,325 Moderate
-          Indicator victims.
-        </li>
-        <li>
-          Of the 10,583 cases, about 80% of victims were female, 12% were male,
-          and the rest were gender minorities or unknown
-        </li>
-        <li>
-          Again, of these 10,583 cases, 2,488 of these were minors and the rest
-          were adults
-        </li>
-        <li>Sex Trafficking accounted for 7,648 of these cases</li>
-        <li>Labor Trafficking accounted for 1,052 of these cases</li>
-      </ul>
-      <p>
-        These statistics are from the
-        <span style="font-weight: bold">
-          National Human Trafficking Hotline
-        </span>
-        website. To learn more, visit their website
-        <a href="https://humantraffickinghotline.org/states">here</a>
-      </p>
-
-      <h2 id="do">What You Can Do</h2>
-      <ul>
-        <li>
-          Donate to organizations that help with human trafficking efforts.
-          These include the
-          <a href="https://polarisproject.org/"> Polaris Project </a> and the
-          <a href="https://aspenhouseslc.org/"> Aspen House </a> among others.
-          Find one that you want to support.
-        </li>
-        <li>
-          Volunteer time and resources to your local efforts to stop human
-          trafficking.
-        </li>
-        <li>
-          Research more and educate those around you about the signs of human
-          trafficking.
-        </li>
-      </ul>
-      <h2 id="help">Get Help</h2>
-      <p>
-        If you are in immediate danger- CALL
-        <span style="font-weight: bold"> 911</span>
-      </p>
-      <p>
-        Call the National Human Trafficking Hotline by dialing
-        <span style="font-weight: bold">1-888-373-7888 ( TTY: 711)</span>
-      </p>
-      <p>
-        Text the National Human Trafficking Hotline by texting
-        <span style="font-weight: bold">BeFree</span> to
-        <span style="font-weight: bold">233733</span>
-      </p>
-      <p>
-        Visit the National Human Trafficking Hotline website-
-        <a href="https://humantraffickinghotline.org/"
-          >https://humantraffickinghotline.org/</a
-        >
-      </p>
-      <p>
-        If you are in Utah, you can also report suspected human trafficking to
-        the Utah Human Trafficking Tip line at 801-200-3443.
-      </p>
-    </div>
 
     <!-- JavaScript Bundle with Popper -->
     <script

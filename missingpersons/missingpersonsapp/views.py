@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import Person
+from django.http import HttpResponse
+from django.template import loader
 # Create your views here.
 
 
@@ -27,3 +29,8 @@ def searchPageView(request):
         people = Person.objects.filter(first_name=first_name)
     except:
         people = Person.object.all()
+
+def index(request):
+     template = loader.get_template('MyApp/index.html')
+     context = {}
+     return HttpResponse(template.render(context, request))

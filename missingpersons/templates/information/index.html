@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -48,7 +49,11 @@
         </ul>
       </div>
     </nav>
-    <h1>Home Page</h1>
+
+    <header style="background-image: url('{% static "missingpersonsapp/media/lightbulb.jpg"%}');" alt= "lightbulb"> 
+          <div style="font-size: 80px; color: lightgray; font-weight: bold; height: 400px; text-align: center;" >Human Trafficking in Utah</div>
+    </header>
+    <div style=" margin: 10px; font-size: 20px;">
     <p>
       Human trafficking is a serious issue that exists throughout all of Utah as
       well as the rest of the nation. It is important to be informed about human
@@ -56,7 +61,34 @@
       authorities in the case that you have any information that could save
       lives.
     </p>
+    
+    <p> On this website you'll find information about human trafficking and how you can help stop it here in the state of Utah. Check out the Learn More page to see this information
+        or go to the Data page to see a list of missing people we suspect are being trafficked.
+    </p>
+    <p style=" font-weight: bold; font-size: 30px"> Human Trafficking Defined </p>
+    <p>
+      Human Trafficking- a crime of exploitation of someone for the purposes
+      of compelled labor or a commercial sex act.
+    </p>
+    <p></p>
+    <p>There are two types of Trafficking-</p>
+    <ul>
+      <li>
+        Sex Trafficking: modern-day slavery where individuals perform
+        commercial sex through the use of force, fraud, or coercion.
+      </li>
+      <li>
+        Labor Trafficking: modern-day slavery where individuals perform labor
+        or services through the use of force, fraud, or coercion.
+      </li>
+    </ul>
+    <p>
+      Recent Utah trafficking cases included commercial sex, multi-state prostitution rings, debt bondage,
+      illicit massage businesses, domestic servitude, labor trafficking within the agriculture and hospitality sectors,
+      forced drug trafficking, and more.
+    </p>
 
+  </div>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
