@@ -1,10 +1,54 @@
 {% extends 'base.html' %} {% block content %}
-    <div style="margin: 10px">
-      <h1>Learn More</h1>
-      <a href="#defined" class="btn btn-primary btn-sm mx-1"> Definitions</a>
-      <a href="#stats" class="btn btn-primary btn-sm mx-1"> Statistics</a>
-      <a href="#do" class="btn btn-primary btn-sm mx-1"> What You Can Do</a>
-      <a href="#help" class="btn btn-primary btn-sm mx-1"> Get Help</a>
+{% load static %}
+  <header style="background-image: url('{% static "img/walking1.jpg"%}'); width: 82%;"
+  alt= "person walking"> 
+    <div style=
+    "font-size: 175px; color: gainsboro; 
+    font-weight: bold; height: 400px; 
+    text-align: center;">
+    Learn More
+    </div>
+  </header>
+    <div style="
+    width: 20%;
+    float:right;
+    border-style: solid; 
+    border-width: 4px;
+    border-color: black;
+    background-color: lightskyblue;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    padding: 7px;
+    font-weight: bold;
+    ">
+      <h2 id="help">Get Help</h2>
+      <p>
+        If you are in immediate danger- CALL
+        <span style="font-weight: bold"> 911</span>
+      </p>
+      <p>
+        Call the National Human Trafficking Hotline by dialing
+        <span style="font-weight: bold"> 1-888-373-7888 ( TTY: 711)</span>
+      </p>
+      <p>
+        Text the National Human Trafficking Hotline by texting
+        <span style="font-weight: bold">BeFree</span> to
+        <span style="font-weight: bold">233733</span>
+      </p>
+      <p>
+        Visit the National Human Trafficking Hotline website-
+        <a href="https://humantraffickinghotline.org/"
+            style=" font-weight: lighter; color: #880E4F;">https://humantraffickinghotline.org
+        </a>
+      </p>
+      <p>
+        If you are in Utah, you can also report suspected human trafficking to
+        the Utah Human Trafficking Tip line at 801-200-3443.
+      </p>
+    </div>
+    <div style="margin: 30px; font-size: 18px; margin-bottom: 40px; width: 70%;">
       <h2 id="defined">Human Trafficking Defined</h2>
       <p>
         Human Trafficking- a crime of exploitation of someone for the purposes
