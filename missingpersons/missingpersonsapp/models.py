@@ -17,4 +17,4 @@ class Person(models.Model):
         return self.city
 
     class Meta:
-        db_table = "missing_persons"
+        db_table = "person" #this was an issue, the persons that we hard coded and the people we add through admin were saving to 2 different tables in the db. I changed this from missing_persons to just person so it would all be compiled in the same spot ZE

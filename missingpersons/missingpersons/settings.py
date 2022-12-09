@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'missingpersons.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'missing_persons',
+        'NAME': 'missing_persons',  #last I fetched this, the db name was set to odyssey instead of missing person ZE
         'USER': 'postgres',
         'PASSWORD': 'Doug_107',
         'HOST': 'localhost'
