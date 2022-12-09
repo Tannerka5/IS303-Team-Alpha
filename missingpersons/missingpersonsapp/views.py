@@ -24,3 +24,14 @@ def searchPageView(request):
 
 def addPersonPageView(request):
     return render(request, "information/add_person.html")
+
+def searchPersons(request):
+    first_name = request.GET.get('first_name')
+
+    persons = Person.objects.filter(first_name=first_name)
+
+    context = {
+        'persons': persons
+    }
+
+    return render(request, "information/search_persons.html", context)

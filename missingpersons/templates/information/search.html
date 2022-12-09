@@ -2,4 +2,9 @@
 {% block title %}<title>Search</title>{% endblock %}
 {% block content %}
     <h1> Search </h1>
+    <form method="get" action="{% url 'Search Persons' %}">
+        <label for="title">Name of Missing Person</label>
+        <input type ="text" id="first_name" name="first_name">
+        <button type="submit" class="btn btn-primary btn-sm mx-1">Search</button>
+    </form>
 {% endblock %}
