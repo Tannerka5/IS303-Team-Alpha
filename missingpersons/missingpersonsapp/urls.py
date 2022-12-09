@@ -1,6 +1,10 @@
 from django.urls import path
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+<<<<<<<<< Temporary merge branch 1
 from .views import indexPageView, dataPageView, learnMorePageView, searchPageView, addPersonPageView
+=========
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from .views import indexPageView, dataPageView, learnMorePageView, searchPageView
+>>>>>>>>> Temporary merge branch 2
 
 urlpatterns = [
     path("", indexPageView, name="index"),

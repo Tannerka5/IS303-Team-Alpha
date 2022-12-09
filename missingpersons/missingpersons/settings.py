@@ -76,12 +76,17 @@ WSGI_APPLICATION = 'missingpersons.wsgi.application'
 
 DATABASES = {
     'default': {
+<<<<<<<<< Temporary merge branch 1
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'missing_persons',
         'USER': 'postgres',
         'PASSWORD': 'Tatkinson5',
         'HOST': 'localhost',
         'PORT': '',
+=========
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+>>>>>>>>> Temporary merge branch 2
     }
 }
 

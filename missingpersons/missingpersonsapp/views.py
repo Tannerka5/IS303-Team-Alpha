@@ -21,9 +21,12 @@ def dataPageView(request):
 def learnMorePageView(request):
     return render(request, "information/learnmore.html")
 
+def addPersonPageView(request):
+    return render(request, "information/add_person.html")
 
 def searchPageView(request):
     return render(request, "information/search.html")
+
     try:
         first_name = request.GET['first_name']
         people = Person.objects.filter(first_name=first_name)
@@ -34,6 +37,3 @@ def index(request):
      template = loader.get_template('MyApp/index.html')
      context = {}
      return HttpResponse(template.render(context, request))
-
-def addPersonPageView(request):
-    return render(request, "information/add_person.html")
