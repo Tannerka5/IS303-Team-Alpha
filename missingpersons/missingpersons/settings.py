@@ -84,12 +84,12 @@ WSGI_APPLICATION = 'missingpersons.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'odyssey',
+        'NAME': 'missing_persons',
         'USER': 'postgres',
-        'PASSWORD': '19mbrammer',
+        'PASSWORD': 'Doug_107',
         'HOST': 'localhost'
     }
-}
+}       
 
 
 # Password validation
