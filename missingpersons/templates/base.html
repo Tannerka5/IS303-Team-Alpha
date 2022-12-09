@@ -15,6 +15,22 @@
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
     <title>Missingpersonsapp</title>
   </head>
+  {% comment %} {% url 'index' as url %}
+  <header style="background-image: url('{% static "missingpersonsapp/media/lightbulb.jpg"%}');" alt= "lightbulb"> 
+    <div style="font-size: 80px; color: lightgray; font-weight: bold; height: 400px; text-align: center;" >Human Trafficking in Utah</div>
+</header>
+{% if request.path == url %}{% endif %}
+{% url 'Learn More' as url %}
+<header style="background-image: url('{% static "missingpersonsapp/media/walking1.jpg"%}'); width: 82%;"
+alt= "person walking"> 
+  <div style=
+  "font-size: 175px; color: gainsboro; 
+  font-weight: bold; height: 400px; 
+  text-align: center;">
+  Learn More
+  </div>
+</header>
+{% if request.path == url %}{% endif %} {% endcomment %}
   <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0.5px">
       <div
