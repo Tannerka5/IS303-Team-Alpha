@@ -1,0 +1,41 @@
+{% extends 'base.html' %} 
+{% block title %}<title>Search Persons</title>{% endblock %}
+{% block content %}
+
+    <h1>Search Result </h1>
+    {% if persons|length == 0 %}
+        <p> No results found </p>
+    {% else %}
+    <table class="table table-bordered table-hover table-condensed .sidepadding">
+        <thead>
+          <tr style="background-color: lightskyblue; border-color: black;">
+            <th title="Field #1">Date Missing</th>
+            <th title="Field #2">Last Name</th>
+            <th title="Field #3">First Name</th>
+            <th title="Field #4">Age at Missing</th>
+            <th title="Field #5">City</th>
+            <th title="Field #6">State</th>
+            <th title="Field #7">Gender</th>
+            <th title="Field #8">Race</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for person in persons %} 
+          <tr>
+            <td>{{ person.date_missing }}</td>
+            <td>{{ person.last_name }}</td>
+            <td>{{ person.first_name }}</td>
+            <td align="right">{{ person.age_at_missing }} </td>
+            <td>{{ person.city }}</td>
+            <td>{{ person.state }}</td>
+            <td>{{ person.gender }}</td>
+            <td>{{ person.race }}</td>
+          </tr>
+          {% endfor %} 
+        </tbody>
+      </table>
+    {% endif %}
+
+    <a class="btn btn-secondary btn-sm mx-1" href="{% url 'Search' %}">Go back to search</a>
+
+{% endblock %}

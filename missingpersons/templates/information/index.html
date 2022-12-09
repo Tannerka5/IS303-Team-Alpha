@@ -1,7 +1,9 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+{% block title %}<title>Home</title>{% endblock %}
+{% block content %}
 {% load static %}
-    <header style="background-image: url('{% static "missingpersonsapp/media/lightbulb.jpg"%}');" alt= "lightbulb"> 
-      <div style="font-size: 80px; color: lightgray; font-weight: bold; height: 400px; text-align: center;" >Human Trafficking in Utah</div>
+    <header style="background-image: url('{% static "img/lightbulb.jpg"%}');" alt= "lightbulb"> 
+      <div class=".sidepadding" style="font-size: 80px; color: lightgray; font-weight: bold; height: 400px; text-align: center;" >Human Trafficking in Utah</div>
     </header>
     <div style=" margin: 15px; margin-left: 25px; font-size: 20px;">     
       <p> On this website you'll find information about human trafficking and how you can help stop it here in the state of Utah. Check out the Learn More page to see this information
@@ -30,13 +32,6 @@
         lives.
       </p>
 
-      <p>
-        Recent Utah trafficking cases included commercial sex, multi-state prostitution rings, debt bondage,
-        illicit massage businesses, domestic servitude, labor trafficking within the agriculture and hospitality sectors,
-        forced drug trafficking, and more.
-      </p>
-
-    </div>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

@@ -1,11 +1,13 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+{% block title %}<title>Data Table</title>{% endblock %}
+{% block content %}
     <br>
     <a href="./search/" class="btn btn-primary btn-sm mx-1"> Search</a>
     <a href="./add_person/" class="btn btn-primary btn-sm mx-1"> Add Person</a>
     <br><br>
-    <table class="table table-bordered table-hover table-condensed">
+    <table class="table table-bordered table-hover table-condensed .sidepadding">
       <thead>
-        <tr>
+        <tr style="background-color: lightskyblue; border-color: black;">
           <th title="Field #1">Date Missing</th>
           <th title="Field #2">Last Name</th>
           <th title="Field #3">First Name</th>
