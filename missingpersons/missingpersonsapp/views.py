@@ -21,24 +21,8 @@ def dataPageView(request):
 def learnMorePageView(request):
     return render(request, "information/learnmore.html")
 
-<<<<<<< HEAD
-
-def searchPageView(request):
-
-    try:
-        first_name = request.GET['first_name']
-        people = Person.objects.filter(first_name=first_name)
-    except:
-        people = Person.object.all()
-
-def index(request):
-     template = loader.get_template('MyApp/index.html')
-     context = {}
-     return HttpResponse(template.render(context, request))
-=======
 def searchPageView(request):
     return render(request, "information/search.html")
 
 def addPersonPageView(request):
     return render(request, "information/add_person.html")
->>>>>>> Tanner_Branch
