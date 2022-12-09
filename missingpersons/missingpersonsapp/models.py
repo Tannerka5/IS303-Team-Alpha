@@ -17,4 +17,4 @@ class Person(models.Model):
         return self.city
 
     class Meta:
-        db_table = "person" #this is important to notice - in pgadmin, the hard coded names and the names you add through the html admin are not stored in the same place, there are 2 different tables
+        db_table = "missing_persons" #this is important to notice - in pgadmin, the hard coded names and the names you add through the html admin are not stored in the same place, there are 2 different tables
