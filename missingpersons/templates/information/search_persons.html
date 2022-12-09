@@ -6,7 +6,7 @@
     {% if persons|length == 0 %}
         <p> No results found </p>
     {% else %}
-    <table class="table table-bordered table-hover table-condensed">
+    <table class="table table-bordered table-hover table-condensed .sidepadding">
         <thead>
           <tr style="background-color: lightskyblue; border-color: black;">
             <th title="Field #1">Date Missing</th>
@@ -36,6 +36,6 @@
       </table>
     {% endif %}
 
-    <a href="{% url 'Search' %}">Go back to search</a>
+    <a class="btn btn-secondary btn-sm mx-1" href="{% url 'Search' %}">Go back to search</a>
 
 {% endblock %}
