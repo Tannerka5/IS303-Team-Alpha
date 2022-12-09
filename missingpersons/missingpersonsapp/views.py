@@ -15,7 +15,7 @@ def dataPageView(request):
     context = {
         "people": db_persons
     }
-    return render(request, "information/data.html", context)
+    return render(request, "information/data.html", {'db_persons': db_persons})
 
 
 def learnMorePageView(request):
@@ -34,3 +34,6 @@ def index(request):
      template = loader.get_template('MyApp/index.html')
      context = {}
      return HttpResponse(template.render(context, request))
+     
+def addPersonPageView(request):
+    return render(request, "information/add_person.html")
