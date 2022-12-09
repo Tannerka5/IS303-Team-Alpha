@@ -23,17 +23,17 @@ def learnMorePageView(request):
 
 
 def searchPageView(request):
-
+    return render(request, "information/search.html")
     try:
         first_name = request.GET['first_name']
         people = Person.objects.filter(first_name=first_name)
     except:
-        people = Person.object.all()
+        people = Person.objects.all()
 
 def index(request):
      template = loader.get_template('MyApp/index.html')
      context = {}
      return HttpResponse(template.render(context, request))
-     
+
 def addPersonPageView(request):
     return render(request, "information/add_person.html")

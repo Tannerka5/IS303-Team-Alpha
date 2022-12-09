@@ -1,57 +1,7 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <title>Missing Persons</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0.5px">
-      <div
-        class="collapse navbar-collapse"
-        id="navbarNav"
-        style="background-color: DarkSlateGray; width: 100%">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a
-              class="nav-link"
-              href="{% url 'index' %}"
-              style="color: GhostWhite; font-weight: bold">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="{% url 'data' %}"
-              style="color: GhostWhite">
-              Data
-              </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              href="{% url 'Learn More' %}"
-              style="color: GhostWhite">
-              Learn More
-              </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <header style="background-image: url('{% static "missingpersonsapp/media/lightbulb.jpg"%}');" alt= "lightbulb"> 
+{% extends 'base.html' %} {% block content %}
+    {% comment %} <header style="background-image: url('{% static "missingpersonsapp/media/lightbulb.jpg"%}');" alt= "lightbulb"> 
           <div style="font-size: 80px; color: lightgray; font-weight: bold; height: 400px; text-align: center;" >Human Trafficking in Utah</div>
-    </header>
+    </header> {% endcomment %}
     <div style=" margin: 15px; margin-left: 25px; font-size: 20px;">     
       <p> On this website you'll find information about human trafficking and how you can help stop it here in the state of Utah. Check out the Learn More page to see this information
         or go to the Data page to see a list of missing people we suspect are being trafficked.
