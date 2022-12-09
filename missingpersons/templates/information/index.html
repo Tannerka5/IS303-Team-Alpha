@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -48,6 +49,17 @@
         </ul>
       </div>
     </nav>
+=======
+{% extends 'base.html' %} {% block content %}
+    <h1>Home Page</h1>
+    <p>
+      Human trafficking is a serious issue that exists throughout all of Utah as
+      well as the rest of the nation. It is important to be informed about human
+      trafficking so that you can help protect others as well as alert
+      authorities in the case that you have any information that could save
+      lives.
+    </p>
+>>>>>>> Tanner_Branch
 
     <header style="background-image: url('{% static "missingpersonsapp/media/lightbulb.jpg"%}');" alt= "lightbulb"> 
           <div style="font-size: 80px; color: lightgray; font-weight: bold; height: 400px; text-align: center;" >Human Trafficking in Utah</div>
@@ -92,5 +104,4 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-  </body>
-</html>
+{% endblock %}
