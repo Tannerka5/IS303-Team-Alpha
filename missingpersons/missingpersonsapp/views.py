@@ -22,12 +22,12 @@ def learnMorePageView(request):
     return render(request, "information/learnmore.html")
     
 def searchPageView(request):
-    return render(request, "information/search.html")
     try:
         first_name = request.GET['first_name']
         people = Person.objects.filter(first_name=first_name)
     except:
-        people = Person.object.all()
+        people = Person.objects.all()
+    return render(request, "information/search.html")
 
 def index(request):
      template = loader.get_template('MyApp/index.html')
